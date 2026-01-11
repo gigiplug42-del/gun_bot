@@ -8,6 +8,10 @@ from telegram.ext import (
 from urllib.parse import quote
 from catalog import PISTOLS, RIFLES, SHOTGUNS
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # loads variables from .env file
+
 
 TOKEN = os.environ["TELEGRAM_TOKEN"]
 
