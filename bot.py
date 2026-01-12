@@ -52,7 +52,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, from_callbac
     ]
 
     text = (
-        "🎉 *Welcome to Slingard Gun Store!*\n\n"
+        " *Welcome to Slingard Gun cate !*\n\n"
         "Browse our premium selection of pistols, rifles, and shotguns.\n"
         "We provide professional, safe, and accurate product information.\n\n"
         "Use the buttons below to explore our catalog.\n\n"
@@ -214,6 +214,23 @@ async def back_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"*{category} → {subcategory}*\nSelect a firearm:",
             keyboard
         )
+
+from flask import Flask
+from threading import Thread
+
+app = Flask("")
+
+@app.route("/")
+def home():
+    return "Bot is running!"
+
+# Keep Replit alive
+def run():
+    app.run(host="0.0.0.0", port=8080)
+
+t = Thread(target=run)
+t.start()
+
 
 
 # --------------------------------------------------
