@@ -52,7 +52,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, from_callbac
     ]
 
     text = (
-        "🎉 *Welcome to Slingard Gun Store!*\n\n"
+        "*Welcome to Slingard Gun cate!*\n\n"
         "Browse our premium selection of pistols, rifles, and shotguns.\n"
         "We provide professional, safe, and accurate product information.\n\n"
         "Use the buttons below to explore our catalog.\n\n"
